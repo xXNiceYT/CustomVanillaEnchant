@@ -1,5 +1,5 @@
 name: CustomVanillaEnchant
-main: CustomVanillaEnchant\Main
+main: anirudh246\CustomVanillaEnchant\Main
 version: 1.0.0
 api: 3.0.0+dev
 load: POSTWORLD
