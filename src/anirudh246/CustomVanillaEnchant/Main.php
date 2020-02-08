@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+namespace anirudh246\CustomVanillaEnchant;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
