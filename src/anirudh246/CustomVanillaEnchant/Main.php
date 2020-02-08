@@ -11,6 +11,7 @@ use pocketmine\item\enchantment\EnchantmentInstance;
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandMap;
 use pocketmine\command\SimpleCommandMap;
+use pocketmine\plugin\PluginManager;
 
 class Main extends PluginBase implements Listener{
     public function onEnable(){
