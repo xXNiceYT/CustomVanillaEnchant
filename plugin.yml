@@ -1,0 +1,11 @@
+name: CustomVanillaEnchant
+main: CustomVanillaEnchant\Main
+version: 1.0.0
+api: 3.0.0+dev
+load: POSTWORLD
+author: anirudh246
+
+commands:
+  enchant:
+    description: enchant command
+    usage: "/enchant"
