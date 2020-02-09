@@ -13,9 +13,10 @@ use pocketmine\command\CommandMap;
 use pocketmine\command\SimpleCommandMap;
 use pocketmine\plugin\PluginManager;
 
-class Main extends PluginBase implements Listener{
-    public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+class Main extends PluginBase{
+    
+    public function onEnable(): void{
+        $commandMap = $this->getServer()->getCommandMap();
         $commandMap->unregister($commandMap->getCommand("enchant"));
     }
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool{
@@ -26,6 +27,8 @@ class Main extends PluginBase implements Listener{
                         $item->addEnchantment(new EnchantmentInstance(Enchantment::getEnchantment($args[0]), $args[1]));
                     }
                 }
+                break;
         }
+        return true;
     }
 }
